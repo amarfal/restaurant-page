@@ -15,7 +15,7 @@ export default function loadMenu() {
     ['Classic Chicken Shawarma', '$9.99'],
     ['Spicy Beef Shawarma', '$10.99'],
     ['Habibi Special Wrap', '$12.49'],
-    ['Falafel Wrap (Vegan)', '$8.99'],
+    ['Falafel Wrap', '$8.99'],
   ];
 
   items.forEach(([name, price]) => {
