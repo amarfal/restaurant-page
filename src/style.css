@@ -319,3 +319,150 @@ body {
     padding: 2rem 1.5rem;
   }
 }
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .topbar {
+    padding: 0.75rem 1rem;
+  }
+
+  .nav {
+    gap: 0.5rem;
+  }
+
+  .nav__brand {
+    font-size: 1.8rem;
+  }
+
+  .nav__btn {
+    font-size: 0.95rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  #content {
+    padding: 2rem 1rem 3rem;
+  }
+
+  .hero {
+    gap: 1.5rem;
+  }
+
+  .hero__text h1 {
+    font-size: 2rem;
+  }
+
+  .hero__text p {
+    font-size: 1.1rem;
+  }
+
+  .hero__cta {
+    font-size: 1.2rem;
+    padding: 0.6rem 2rem;
+  }
+
+  .pane {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .pane h2 {
+    font-size: 1.7rem;
+  }
+
+  .pane p,
+  .pane li {
+    font-size: 1rem;
+  }
+
+  .gallery-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .gallery__title {
+    font-size: 1.8rem;
+  }
+
+  .gallery__subtitle {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .gallery__grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 0.75rem;
+  }
+
+  .gallery__credit {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .topbar {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .nav__brand {
+    font-size: 1.5rem;
+  }
+
+  .nav__btn {
+    font-size: 0.85rem;
+    padding: 0.35rem 0.6rem;
+  }
+
+  #content {
+    padding: 1.5rem 0.75rem 2rem;
+  }
+
+  .hero {
+    gap: 1.25rem;
+  }
+
+  .hero__text h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero__text p {
+    font-size: 0.95rem;
+  }
+
+  .hero__cta {
+    font-size: 1.1rem;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .hero__img--left,
+  .hero__img--right {
+    max-width: 100%;
+  }
+
+  .pane {
+    padding: 1.25rem 1rem;
+  }
+
+  .pane h2 {
+    font-size: 1.5rem;
+  }
+
+  .pane p,
+  .pane li {
+    font-size: 0.9rem;
+  }
+
+  .gallery-section {
+    padding: 1.25rem 0.75rem;
+  }
+
+  .gallery__title {
+    font-size: 1.5rem;
+  }
+
+  .gallery__subtitle {
+    font-size: 0.9rem;
+  }
+
+  .gallery__grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.5rem;
+  }
+}
