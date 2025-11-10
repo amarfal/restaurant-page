@@ -22,7 +22,6 @@ function initNav() {
       } else if (tab === 'menu') {
         loadMenu();
       } else if (tab === 'contact' || tab === 'order') {
-        // right side buttons can currently share the Contact/Gallery tab
         loadContact();
       }
 
@@ -34,6 +33,6 @@ function initNav() {
 // initial page load
 document.addEventListener('DOMContentLoaded', () => {
   initNav();
-  loadHome();          // show home first
+  loadHome();    
   setActiveButton('home');
 });
