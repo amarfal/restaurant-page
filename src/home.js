@@ -15,12 +15,6 @@ export default function loadHome() {
   leftImg.alt = 'Shawarma wrap in hand';
   leftImg.classList.add('hero__img', 'hero__img--left');
 
-  // right image
-  const rightImg = document.createElement('img');
-  rightImg.src = spitImg;
-  rightImg.alt = 'Shawarma turning on the spit';
-  rightImg.classList.add('hero__img', 'hero__img--right');
- 
   // center text
   const textBox = document.createElement('div');
   textBox.classList.add('hero__text');
@@ -45,6 +39,13 @@ export default function loadHome() {
   ctaBtn.classList.add('hero__cta');
  
   textBox.append(headline, intro, ctaBtn);
+
+  // right image
+  const rightImg = document.createElement('img');
+  rightImg.src = spitImg;
+  rightImg.alt = 'Shawarma turning on the spit';
+  rightImg.classList.add('hero__img', 'hero__img--right');
+ 
   hero.append(leftImg, textBox, rightImg);
  
   content.appendChild(hero);

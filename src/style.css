@@ -1,0 +1,235 @@
+:root {
+  --bg-top: #8a4b54;
+  --bg-bottom: #f2a13b;
+  --bg-mid: #d67055;
+  --text-light: #fffdf8;
+  --accent: #b94c52;
+  --accent-dark: #81393c;
+  --border-line: #fbead7;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    var(--bg-top),
+    var(--bg-mid),
+    var(--bg-bottom)
+  );
+  font-family: "Segoe Print", "Bradley Hand", "Comic Sans MS", cursive;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  background-color: rgba(90, 50, 50, 0.95);
+  padding: 1rem 3rem;
+  border-bottom: 3px solid rgba(251, 234, 215, 0.4);
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: auto auto 1fr auto auto;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.nav__brand {
+  font-family: "Segoe Script", "Brush Script MT", cursive;
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+  font-style: italic;
+}
+
+.nav__btn {
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-family: "Segoe Print", "Bradley Hand", "Comic Sans MS", cursive;
+  font-size: 1.1rem;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.2s ease;
+  border-radius: 4px;
+}
+
+.nav__btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav__btn--active {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+#content {
+  flex: 1;
+  padding: 3rem 5vw 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.hero {
+  max-width: 1400px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  color: #fff;
+}
+
+.hero__img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.45);
+}
+
+.hero__img--left {
+  justify-self: end;
+  max-width: 380px;
+}
+
+.hero__img--right {
+  justify-self: start;
+  max-width: 380px;
+}
+
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  text-align: center;
+}
+
+.hero__text h1 {
+  font-family: "Segoe Script", "Brush Script MT", cursive;
+  font-size: 3.2rem;
+  line-height: 1.2;
+  margin: 0;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.hero__text p {
+  font-family: "Segoe Script", "Brush Script MT", cursive;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  max-width: 42rem;
+  margin: 0;
+  font-style: italic;
+}
+
+.hero__name {
+  font-weight: 600;
+}
+
+.hero__cta {
+  border: 3px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: "Segoe Script", "Brush Script MT", cursive;
+  font-size: 1.5rem;
+  padding: 0.7rem 3rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+.hero__cta:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: scale(1.05);
+}
+
+.pane {
+  max-width: 900px;
+  width: 100%;
+  background: rgba(90, 50, 50, 0.8);
+  border-radius: 16px;
+  padding: 2.5rem 3rem;
+  color: #fff;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
+}
+
+.pane h2 {
+  font-family: "Segoe Script", "Brush Script MT", cursive;
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  font-size: 2.1rem;
+  font-style: italic;
+}
+
+.pane p,
+.pane li {
+  font-family: "Segoe Script", "Brush Script MT", cursive;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  font-style: italic;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.menu-list li:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 1100px) {
+  .nav {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 0.8rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .hero__img--left,
+  .hero__img--right {
+    justify-self: center;
+    max-width: 450px;
+  }
+
+  .hero__text h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero__text p {
+    font-size: 1.2rem;
+  }
+
+  #content {
+    padding-inline: 1.5rem;
+  }
+}

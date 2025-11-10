@@ -9,13 +9,13 @@ export default function loadContact() {
   title.textContent = 'Visit Habibi Shawarma';
 
   const p1 = document.createElement('p');
-  p1.textContent = '123 Spice Street, Flavor Town, Earth';
+  p1.textContent = '123 Fake Street, Flavor Town, Earth';
 
   const p2 = document.createElement('p');
-  p2.textContent = 'Open daily: 11:00 – 23:00';
+  p2.textContent = 'Open daily: 9:00 AM - 10:00 PM';
 
   const p3 = document.createElement('p');
-  p3.textContent = 'Call / WhatsApp: (555) 123-4567';
+  p3.textContent = 'Our Number: (123)-456-7890';
 
   section.append(title, p1, p2, p3);
   content.appendChild(section);
